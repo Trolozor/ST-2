@@ -9,7 +9,7 @@ double earthAndRope(double lenghtRope) {
     double initialFerence = earth.getFerence();
     earth.setFerence(initialFerence + lenghtRope);
 
-    double gap = earth.getFerence() - initialFerence;
+    double gap = earth.getRadius() - earthRadiusMeters;
     return gap;
 }
 
