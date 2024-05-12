@@ -1,4 +1,4 @@
-// Copyright 2020 GHA Test Team
+// Copyright 2024 Dostavalov Semyon
 
 #include <gtest/gtest.h>
 
