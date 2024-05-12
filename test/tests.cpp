@@ -15,7 +15,8 @@ TEST(CircleTest, SettersAndGetters) {
     circle.setFerence(20.0);
     EXPECT_DOUBLE_EQ(circle.getRadius(), 20.0 / (2 * M_PI));
     EXPECT_DOUBLE_EQ(circle.getFerence(), 20.0);
-    EXPECT_DOUBLE_EQ(circle.getArea(), M_PI * (20.0 / (2 * M_PI)) * (20.0 / (2 * M_PI)));
+    EXPECT_DOUBLE_EQ(circle.getArea(), M_PI * (20.0 / (2 * M_PI)) * 
+        (20.0 / (2 * M_PI)));
 
     circle.setArea(50.0);
     EXPECT_DOUBLE_EQ(circle.getRadius(), sqrt(50.0 / M_PI));
@@ -56,7 +57,8 @@ TEST(TasksTest, EarthAndRope) {
 }
 
 TEST(TasksTest, PoolCost) {
-    double expectedCost = 1000 * ((M_PI * (3 + 1) * (3 + 1)) - (M_PI * 3 * 3)) + 2000 * (2 * M_PI * (3 + 1));
+    double expectedCost = 1000 * ((M_PI * (3 + 1) * (3 + 1))
+        - (M_PI * 3 * 3)) + 2000 * (2 * M_PI * (3 + 1));
     double actualCost = poolCost();
     EXPECT_DOUBLE_EQ(actualCost, expectedCost);
 }
