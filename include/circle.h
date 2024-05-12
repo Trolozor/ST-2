@@ -9,7 +9,6 @@
 #include <stdexcept>
 
 class Circle {
-
 private:
     double radius;
     double ference;
@@ -19,17 +18,17 @@ private:
     void calculateArea();
     void calculateRadiusFromFerence();
     void calculateRadiusFromArea();
-public:
 
-    Circle(double radius);
+public:
+    explicit Circle(double radius);
 
     void setRadius(double newRadius);
     void setFerence(double newFerence);
     void setArea(double newArea);
 
-    double getRadius();
-    double getFerence();
-    double getArea();
+    double getRadius() const;
+    double getFerence() const;
+    double getArea() const;
 };
 
 #endif  // INCLUDE_CIRCLE_H_

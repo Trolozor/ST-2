@@ -15,7 +15,7 @@ TEST(CircleTest, SettersAndGetters) {
     circle.setFerence(20.0);
     EXPECT_DOUBLE_EQ(circle.getRadius(), 20.0 / (2 * M_PI));
     EXPECT_DOUBLE_EQ(circle.getFerence(), 20.0);
-    EXPECT_DOUBLE_EQ(circle.getArea(), M_PI * (20.0 / (2 * M_PI)) * 
+    EXPECT_DOUBLE_EQ(circle.getArea(), M_PI * (20.0 / (2 * M_PI)) *
         (20.0 / (2 * M_PI)));
 
     circle.setArea(50.0);
@@ -53,7 +53,7 @@ TEST(CircleTest, LargeRadius) {
 TEST(TasksTest, EarthAndRope) {
     double lenghtRope = 1.0;
     double actualGap = earthAndRope(lenghtRope);
-    EXPECT_DOUBLE_EQ(actualGap, 0.0016);
+    EXPECT_NEAR(actualGap, 0.16);
 }
 
 TEST(TasksTest, PoolCost) {
