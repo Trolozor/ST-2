@@ -53,7 +53,7 @@ TEST(CircleTest, LargeRadius) {
 TEST(TasksTest, EarthAndRope) {
     double lenghtRope = 1.0;
     double actualGap = earthAndRope(lenghtRope);
-    EXPECT_NEAR(actualGap, 0.16);
+    EXPECT_NEAR(actualGap, 0.16, EPS);
 }
 
 TEST(TasksTest, PoolCost) {
