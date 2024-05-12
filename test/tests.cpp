@@ -1,4 +1,4 @@
-// Copyright 2024 Dostavalov Semyon
+// Copyright 2024 Dostavalov Semyo
 
 #include <gtest/gtest.h>
 #include <cstdint>
